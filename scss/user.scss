@@ -1,0 +1,110 @@
+@import 'main.scss';
+.type{
+	width:100%;
+    height:100%;
+    overflow: hidden;
+	#header{
+		width:100%;
+		height:44px;
+		
+		#loginheader{
+			width:100%;
+			height:44px;
+			display:flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			#backHome{
+				margin-right:15px;
+			}
+		}
+		
+    }
+    #con1{
+        margin-top:10px;
+        width:100%;
+        height:610px;
+        overflow: hidden;
+        .loginform{
+            width: 100%;
+            height: 300px;
+            position: relative;
+            background:#fff;
+            input{
+                width: 90%;
+                height: 50px;
+				margin:10px 5%;
+				border:none;
+                border-bottom: 1px solid #e3e3e3;
+                outline: none;
+                background:#fff;
+            }
+            .username{
+                 margin-top: 20px;
+                 font-size: 13px;
+                 text-indent: 12px;
+                 border-bottom: 1px solid #e3e3e3;
+            }
+            .password{
+                 font-size: 13px;
+                 text-indent: 12px;
+            }
+            .freelogin{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                margin-top: 10px;
+                margin-left: 30px;
+            }
+            .freetet{
+                position: absolute;
+                font-size: 15px;
+                color: #333;
+                top: 92px;
+				margin-left: 5px;
+				margin-top:68px;
+            }
+            .loginbtn{
+                width: 90%;
+                height: 40px;
+                background: #FF0056;
+                color: #fff;
+                margin-left: 5%;
+                border: 0;
+                outline: none;
+                margin-top: 10px;
+                border-radius: 5px;
+            }
+            .goRegister{
+                position: absolute;
+                color: #3195CB;
+                right: 100px;
+                bottom: 20px;
+                font-size: 14px;
+            }
+            .forgetPsd{
+                position: absolute;
+                color: #3195CB;
+                right: 30px;
+                bottom: 20px;
+                font-size: 14px;
+            }
+        }
+        .logintoast{
+            display: inline-block;
+            width: 80%;
+            height: 30px;
+            background: #000;
+            color: #fff;
+            margin-left: 10%;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 100px;
+            opacity: .7;
+            display: none;
+        }
+    }
+	
+}
+		

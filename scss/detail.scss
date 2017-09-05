@@ -1,0 +1,210 @@
+@import 'main.scss';
+#con{
+  width:100%;
+  height:100%;
+  background:#fff;
+  overflow-y:auto;
+  position: relative;
+   .cover{
+        position: absolute;
+        left:100px;
+        top:500px;
+        display:block;
+        width:150px;         
+        height:30px;
+        text-align: center;
+        line-height: 30px;
+        color:#fff;
+        border-radius:3px;
+        background:rgba(0,0,0,0.6);
+        z-index: 1000;
+        display:none;
+        }
+    #header{
+      width:100%;
+      height:44px;
+      @include flexBox;
+      @include flex-direction(row);
+      border-bottom:1px solid #ccc;
+      background:#FAFBFC;
+      box-shadow:0px 1px 1px #aaa;
+      h2{
+          @include flex(1);
+          @include flex-center;
+          color:#343434;
+          font-size:14px;
+          font-weight: 100;
+      }
+      .iconfont{
+        margin:0 20px;
+      }
+    }
+
+    #img{
+      width:100%;
+      height:225px;
+      margin-top:5px;
+      img{
+        display:block;
+        width:100%;
+        height:100%;
+      }
+    }
+    .instro{
+      width:100%;
+      min-height:150px;
+      height:auto!important;
+      height:150px;
+      background:#fff;
+      overflow: hidden;
+      .tit{
+        width:90%;
+        margin:15px auto;
+         span{
+           display:block;
+         }
+         .titname{
+           float:left;
+         }
+         .iconfont{
+           float:right;
+           color:#f66;
+            margin-top:-10px;
+         }
+      }
+
+      .thingprice{
+            width:100%;
+            margin:20px auto;
+            padding:10px 20px;
+            border-bottom:1px solid #ccc;
+                span:nth-of-type(1){
+                    color:#f66;
+                  i{
+                    font-size:24px;
+                    font-style: normal;
+                  }
+                }
+                del{
+                  font-size:12px;
+                  color:#aaa;
+                  margin-left:10px;
+                }
+      }
+
+      .pms{
+        width:100%;
+          li{
+              width:90%;
+              height:30px;
+              margin:20px auto;
+              list-style: none;
+              .mode{
+                padding: 5px 10px;
+                background: #f66;
+                color: #fff;
+                text-align: center;
+                float: left;
+                font-style: normal;
+                border-radius:3px;
+              }
+              .txt{
+                float: left;
+                margin-left:10px;
+                margin-top:5px;
+              }
+          }
+       }
+    }
+
+    #shopxinxi{
+        width:100%;
+        background:#fff;
+        position:relative;
+        .instros{
+          width:100%;
+          height:30px;
+          span{
+            display:block;
+            float:left;
+            width:50%;
+            height:100%;
+            text-align: center;
+          }
+        }
+        .txts{
+          width:100%;
+          position:absolute;
+          left:0;
+          top:30px;
+          display:none;
+          background:#fff;
+          li{
+            width:100%;
+            list-style: none;
+            h2{
+              text-align: center;
+              margin:10px auto;
+            }
+
+          }
+        }
+        #shopxin{
+          width:100%;
+            li{
+              list-style: none;
+              width:100%;
+              height:30px;
+              border-bottom:1px solid #ccc;
+              border-top:1px solid #ccc;
+              line-height: 30px;
+              .nnn{
+                  display:block;
+                  width:30%;
+                  height:100%;
+                  background:#f6f6f6;
+                  opacity:0.5;
+                  border-right:1px solid #ccc;
+                  box-sizing: border-box;
+                  float:left;
+                  text-align: center;
+                }
+                .vvv{
+                  display:block;
+                  width:60%;
+                  float:left;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  margin-left:20px;
+                }
+            }
+        }
+        
+    }
+   
+    #cart{
+      width:100%;
+      height:50px;
+      background:rgba(0,0,0,.7);
+      position: fixed;
+      bottom:0;
+      left:0;
+
+      #iconfont{
+            color:#fff;
+            font-size:40px;
+          }
+      .goshop{
+            display:block;
+            width:130px;
+            height:50px;
+            background:#F00;
+            color:#fff;
+            text-align: center;
+            line-height: 50px;
+            float:right;
+            text-decoration: none;
+          }
+        }
+      }

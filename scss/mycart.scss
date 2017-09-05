@@ -1,0 +1,148 @@
+@import 'main.scss';
+#type{
+    width:100%;
+    height:100%;
+    background:#F6F6F6;
+    overflow-y: auto;
+    position:relative;
+    #header{
+        @include flexBox;
+        @include flex-direction(row);
+        width:100%;
+        height:44px;
+        background:#FAFBFC;
+        border-bottom:1px solid #ccc;
+        box-shadow:0px 0px 10px #aaa;
+        .iconfont{
+            margin-left:15px;
+        }
+        .title{
+            @include flex(1);
+            @include flex-center;
+            font-size:16px;
+            margin-left:-15px;
+            border:none;
+        }
+    }
+    .cartcon{
+        width:100%;
+        background:#fff;
+        margin-top:10px;
+        padding-bottom:100px; 
+        h2{
+            width:90%;
+            margin:5px auto;
+            border-bottom:1px solid #aaa;
+            line-height: 20px;
+            padding-bottom:5px;
+            font-weight:100;
+        }
+        #cartlist{
+          width:100%;
+          @include flexBox;
+          @include flex-direction(column);
+          .cartcontent{
+            width:90%;
+            margin:10px auto;
+            position: relative;
+            border-bottom: 1px solid #ccc;
+              li{
+                width:100%;
+                height:130px;
+                margin:10px auto;
+                    .left{
+                        float: left;
+                        width:100px;
+                        height: 90px;
+                        padding:10px;
+                  img{
+                    display:block;
+                    width:100%;
+                    height:100%;
+                  }
+            }
+            .right{
+                float:left;
+                width:180px;
+                height:120px;
+
+                .name{
+                    font-size:14px;
+                    color:#343434;
+                    margin-bottom:10px;
+                }
+                .price{
+                  font-size:14px;
+                  margin-top:10px;
+                }
+
+                .addordelete{
+                    width:100%;
+                    margin-top:10px;
+                    button{
+                      width:30px;
+                      height:30px;
+                      float:left;
+                      background:#fff;
+                      outline: none;
+                      border:1px solid #ccc;
+                    }
+                    span{
+                      display:block;
+                      width:30px;
+                      height:30px;
+                      float:left;
+                      border:1px solid #ccc;
+                      box-sizing:border-box;
+                      text-align: center;
+                      line-height: 30px;
+                    }
+
+                    .delete{
+                      float:right;
+                      border:none;
+                      font-family: '微软雅黑';
+                      color:#ccc;
+                      font-size:16px;
+                    }
+                }
+            } 
+        }
+           .money{
+                  width:100%;
+                  height:30px;
+                  margin:0px auto;
+                  position: absolute;
+                  left:0;
+                  top:120px;
+                  padding-top:5px;
+                    .price{
+                        float:right;
+                        color:#f00;
+                    }
+                }
+          }
+        }
+    }
+     #topay{
+            width:100%;
+            height:50px;
+            background:#fff; 
+            margin:10px auto 0;
+            color:#fff;
+            border-top:1px solid #ccc;
+            position: fixed;
+            left:0;
+            bottom:0;
+                span{
+                    display:block;
+                    width:100px;
+                    height:50px;
+                    float:right;
+                    background:#f00;
+                    text-align: center;
+                    line-height: 50px;
+                }
+          }
+    
+}

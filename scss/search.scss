@@ -1,0 +1,95 @@
+
+
+.type{
+	width:100%;
+	height:100%;
+	background:#f6f6f6;
+	#headers{
+		width:100%;
+		height:44px;
+		border-bottom:1px solid #ccc;
+		.iconfont{
+			float:left;
+			margin-left:10px;
+		}
+		.title{
+			float:left;
+			height:36px;
+			width:260px;
+			border:1px solid #ccc;
+			margin-left:15px;
+			margin-top:3px;
+			font-size:14px;
+			line-height: 36px;
+			text-indent: 10px;
+			border-radius:20px 20px 20px 20px/20px 20px 20px 20px;
+			color:#aaa;
+			.iconfont{
+				font-size:14px;
+				margin-left:10px;
+				float:left;
+				line-height: 36px;
+			}
+			input{
+				border:none;
+				outline:none;
+				background:#F6F6F6;
+			}
+		}
+		.search{
+			float:right;
+			margin-right:20px;
+			line-height: 44px;
+		}
+	}
+
+
+
+		.searchgoods{
+			width:100%;
+			height:100%;
+			background:#f7f7f7;
+			position:relative;
+			#searchlist{
+				width:100%;
+				position:absolute;
+				left:0;
+				top:10px;
+				z-index: 999;
+				li{
+					width:100%;
+					height:45px;
+					background:#f7f7f7;
+					border-bottom: 1px solid #ccc;
+					line-height: 45px;
+					span{
+						margin-left:50px;
+					}
+				}
+			}
+			.hot{
+				width:90%;
+				height:100%;
+				margin:10px auto;
+				h2{
+					font-weight: 100;
+					color:#ccc;
+					font-size:1rem;
+				}
+				.searchhot{
+					margin-top:10px;
+					span{
+						display:block;
+						padding:5px 8px;
+						float:left;
+						margin:10px;
+						border:1px solid #ccc;
+						font-size:14px;
+						color:#343434;
+						border-radius:3px;
+					}
+				}
+			}
+		}
+
+}

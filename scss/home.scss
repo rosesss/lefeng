@@ -1,0 +1,318 @@
+@import 'main.scss';
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    #type {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        #header {
+            width: 100%;
+            height: 50px;
+            background: #FC1158;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .logoname {
+                font-size: 27px;
+                color: #fff;
+            }
+            #search {
+                width: 60%;
+                height: 30px;
+                border: 1px solid #e3e3e3;
+                background: #fff;
+                border-radius: 10px;
+                text-align: center;
+                line-height: 30px;
+                .fangdajin {
+                    font-family: 'iconfont';
+                }
+            }
+            .personIcon {
+                font-family: 'iconfont';
+                font-size: 28px;
+                color: #fff;
+            }
+        }
+
+
+
+        #content {
+            flex: 1;
+            width: 100%;
+            overflow: auto;
+            &::-webkit-scrollbar {
+                display: none
+            }
+
+            #cartBtn{
+                display: block;
+                width: 50px;
+                height: 50px;
+                font-family: 'iconfont';
+                background: #000;
+                color: #fff;
+                position: fixed;
+                left: 5%;
+                top: 80%;
+                font-size: 27px;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 10px;
+                z-index: 999;
+            }
+
+            #banner {
+                width: 100%;
+                height: 150px;
+                border-bottom: 1px solid #f66;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                #bannerpoint {
+                    span {
+                        background: #000;
+                    }
+                }
+            }
+            .homenav {
+                width: 100%;
+                height: 100px;
+                ul {
+                    width: 100%;
+                    height: 100px;
+                    border-bottom: 1px solid #e3e3e3;
+                    li {
+                        float: left;
+                        width: 25%;
+                        height: 100px;
+                        img {
+                            width: 100%;
+                            height: 100%
+                        }
+                    }
+                }
+            }
+            .newper {
+                width: 100%;
+                height: 150px;
+                margin: 10px 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .nationgoods {
+                width: 100%;
+                height: 500px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .todayKing {
+                width: 100%;
+                height: 150px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .lunbo {
+                width: 100%;
+                height: 100px;
+                margin-top: 5px;
+                #lubbobox {
+                    width: 100%;
+                    height: 100%;
+                }
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .right8 {
+                width: 100%;
+                margin: 5px 0;
+                li {
+                    width: 96%;
+                    height: 150px;
+                    margin-left: 2%;
+                    margin-top: 5px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .globe {
+                width: 100%;
+                height: 20px;
+                background: #F1F1F1;
+                line-height: 20px;
+                text-align: center;
+            }
+            .creay {
+                width: 100%;
+                height: 100px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .globelunbo {
+                width: 100%;
+                height: 200px;
+                #globelunbo {
+                    width: 100%;
+                    height: 200px;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: 100%;
+                            height: 200px;
+                            div {
+                                width: 100%;
+                                height: 200px;
+                                position: relative;
+                                img:nth-child(1) {
+                                    width: 30%;
+                                    height: 200px;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                }
+                                img:nth-child(2) {
+                                    width: 35%;
+                                    height: 100px;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 30%;
+                                }
+                                img:nth-child(3) {
+                                    width: 35%;
+                                    height: 100px;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                img:nth-child(4) {
+                                    width: 35%;
+                                    height: 100px;
+                                    position: absolute;
+                                    left: 30%;
+                                    bottom: 0;
+                                }
+                                img:nth-child(5) {
+                                    width: 35%;
+                                    height: 100px;
+                                    position: absolute;
+                                    right: 0;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .baners {
+                width: 100%;
+                height: 20px;
+                background: #E3E3E3;
+                font-size: 15px;
+                line-height: 20px;
+                text-align: center;
+                margin: 5px 0;
+            }
+            .banerbox {
+                width: 100%;
+                height: auto;
+                .banerwrap {
+                    width: 100%;
+                    height: 350px;
+                    .banerlogo {
+                        width: 100%;
+                        height: 200px;
+                    }
+                    .banerswiper {
+                        width: 100%;
+                        height: 150px;
+                        #baner {
+                            width: 100%;
+                            height: 140px;
+                            .swiper-slide {
+                                img {
+                                    width: 100%;
+                                    height: 100px;
+                                }
+                                span {
+                                    display: block;
+                                    width: 100%;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .quanqiugou {
+                width: 100%;
+                li {
+                    width: 100%;
+                    height: 180px;
+                    img {
+                        width: 100%;
+                        height: 150px;
+                    }
+                    span {
+                        font-size: 13px;
+                    }
+                    .discout {
+                        color: #f66;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+}

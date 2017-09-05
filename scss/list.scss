@@ -1,0 +1,91 @@
+@import 'main.scss';
+.type{
+    width:100%;
+    height:100%;
+    overflow-y: auto;
+  .cover{
+        position: fixed;
+        left:100px;
+        top:500px;
+        display:block;
+        width:165px;         
+        height:30px;
+        text-align: center;
+        line-height: 30px;
+        color:#fff;
+        border-radius:3px;
+        background:rgba(0,0,0,0.6);
+        z-index: 1000;
+        display:none;
+        }
+    #header{
+        .iconfont:nth-of-type(2){
+            margin-right:20px;
+        }
+    }
+    #con{
+        width:100%;
+        height: 100%;
+       
+        #list{
+            width:100%;
+            li{
+                width:50%;
+                border-right:1px solid #ccc;
+                border-bottom:1px solid #ccc;
+                box-sizing: border-box;
+                float:left;
+                height:280px;
+                img{
+                    width:90%;
+                    height:60%;
+                    margin-left:5%;
+                }
+                .name{
+                    width:90%;
+                    height:40px;
+                    margin:0 auto;
+                    span{
+                        display:block;
+                    }
+                    .firstname{
+                        font-size:14px;
+                        font-weight: 900;
+                        float:left;
+                    }
+                    .proname{
+                        width:90px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        float:left;
+                    }
+                }
+                .price{
+                    width:90%;
+                    height:20px;
+                    margin:0 auto;
+                    span{
+                        float:left;
+                        display: block;
+                    }
+                    .newprice{
+                        font-size:20px;
+                        margin-right:5px;
+                    }
+                    .oldprice{
+                        color:#aaa;
+                        margin-top:10px;
+                    }
+                    .iconfont{
+                        float:right;
+                        color:#f66;
+                        margin-right:30px;
+                        margin-top:-10px;
+                    }
+                }
+            }
+        }
+    }
+   
+}

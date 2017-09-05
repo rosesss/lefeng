@@ -1,0 +1,114 @@
+@import 'main.scss';
+.type{
+    width:100%;
+    height:100%;
+    overflow-y: auto;
+    position:relative;
+    .cover{
+        position: fixed;
+        left:100px;
+        top:500px;
+        display:block;
+        width:165px;         
+        height:30px;
+        text-align: center;
+        line-height: 30px;
+        color:#fff;
+        border-radius:3px;
+        background:rgba(0,0,0,0.6);
+        z-index: 1000;
+        display:none;
+        }
+#header{
+    #home{
+        margin-right:20px;
+    }
+}
+#content{
+    width:100%;
+   
+    background:#fff;
+    
+    .img{
+        width:100%;
+        height:166px;
+        img{
+            display:block;
+            width:100%;
+            height:100%;
+        }
+    }
+    .listnav{
+        width:100%;
+        height:45px;
+        border-bottom:1px solid #aaa;
+        .nav{
+            float:left;
+            width:33%;
+            height:100%;
+            border-right:1px solid #aaa;
+            text-align: center;
+            line-height: 45px;
+            font-size:14px;
+            i{
+                font-size:14px;
+                color:#ccc;
+            }
+        }
+        #chose{
+            border:none;
+        }
+    }
+    #prolist{
+        width:100%;
+        li{
+            width:50%;
+            float:left;
+            height:260px;
+            border-right:1px solid rgba(0,0,0,.12);
+            border-bottom:1px solid rgba(0,0,0,.12);
+            box-sizing: border-box;
+            padding:10px;
+            .proimg{
+                width:90%;
+                height:70%;
+                margin:0 auto;
+                img{
+                    display:block;
+                    width:100%;
+                    height:100%;
+                }
+            }
+            .protitle{
+                width:90%;
+                margin:10px auto 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size:12px;
+                .protit{
+                    font-weight: 900;
+                    margin-right:5px;
+                }
+            }
+            .proprice{
+                width:90%;
+                margin:10px auto;
+                .oldprice{
+                    font-size:20px;
+                    margin-right:6px;
+                }
+                .newprice{
+                    font-size:14px;
+                    color:#ccc;
+                }
+                i{
+                    float:right;
+                    color:#f66;
+                    margin-top:-10px;
+                }
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,102 @@
+@import "util.scss";//工具类css----兼容性
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#app{
+width:100%;
+height: 100%;
+font-size:14px;
+#container{
+    width:100%;
+    height:100%;
+    @include flexBox;
+    @include flex-direction('column');
+    #type{
+        width:100%;
+        height:100%;
+        display: flex;
+        font-size:16px;
+            #header{
+                width:100%;
+                height:44px;
+                background:#FC1158;
+                border-bottom:1px solid #fefefe;
+                overflow: hidden;
+                @include flexBox;
+                @include flex-direction(row)
+                    .iconfont{
+                        float:left;
+                        margin-left:20px;
+                    }
+                    .title{
+                        @include flex(1);
+                        @include flex-center;
+                        @include flexBox;
+                        @include flex-direction(row);
+                         height:32px;
+                         margin-top:5px;
+                        a{
+                            display:block;
+                            height:32px;
+                            float:left;
+                            border:1px solid #FF9999;
+                            @include flex-center;
+                            padding:0 10px;
+                            text-decoration: none;
+                            font-size:14px;
+                            color:#343434;
+                        }
+                        #boy{
+                            border-right:none;
+                            border-radius:3px 0 0 3px;
+                        }
+                        #girl{
+                            border-left:none;
+                            border-radius:0 3px 3px 0;
+                        }
+                    }
+                    #shop{
+                        float:right;
+                        margin-right:20px;
+                        font-size:28px;
+                    }
+
+            }
+            #content{
+                @include flex(1);
+                width:100%;
+                overflow: auto;
+                background:#fff;
+            }
+        }
+
+
+    #footer{
+        width:100%;
+        height:55px;
+        background:#fff;
+        ul{
+            width:100%;
+            height:100%;
+            @include flexBox;
+            li{
+                @include flex(1);
+                @include flex-center;
+                @include flex-direction(column);
+
+                a{
+                    color:#343434;
+                    @include flex-center;
+                    text-decoration: none;
+                    .iconfont{
+                        margin-bottom:-10px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
